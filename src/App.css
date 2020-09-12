@@ -154,9 +154,7 @@ nav {
     top: 1.7rem;
     left: 0.4rem;
   }
-  /* .links {
-    display: none;
-  } */
+
   .links li:nth-child(1),
   .links li:nth-child(2) {
     display: none;
@@ -184,5 +182,10 @@ nav {
 
   .copyright a {
     font-size: 0.4rem;
+  }
+
+  .copyright {
+    /* top: 55%; */
+    right: 1%;
   }
 }
