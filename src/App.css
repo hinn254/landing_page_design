@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #ccd6f6;
+}
+nav {
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+}
+.links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 2rem;
+}
+.links li {
+  list-style-type: none;
+  margin: 5px 30px;
+  margin-top: 2rem;
+}
+.links li a {
+  text-decoration: none;
+  padding: 3px;
+  color: #ccd6f6;
+}
+.brand {
+  /* color: #8892b0; */
+
+  color: #ccd6f6;
+  padding: 3px;
+  position: absolute;
+  top: 25px;
+  left: 2rem;
+  font-family: "Calligraffitti", cursive;
+}
+.nav-links {
+  position: relative;
+  font-family: "Merriweather", serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  background: #010100;
+  height: 102vh;
+  overflow: hidden;
+  color: #ccd6f6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  color: #ccd6f6;
+}
+.social-links {
+  text-align: start;
+  margin-right: 5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.s-links {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.s-links a {
+  margin: 1rem 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.pic-section img {
+  border-radius: 250rem;
+  width: 58rem;
+  position: relative;
+  opacity: 0.8;
+  filter: alpha(opacity=70);
+}
+.det {
+  position: absolute;
+  top: 80%;
+  left: 15%;
+  font-family: "Calligraffitti", cursive;
+  color: #ccd6f6;
+}
+.det .side {
+  margin-left: 2rem;
+}
+.det .arr {
+  margin-left: 4rem;
+}
+.details {
+  position: absolute;
+  top: 30%;
+  left: 65%;
+  font-family: "Calligraffitti", cursive;
+  color: #8892b0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.details .sec {
+  position: absolute;
+  left: 40%;
+}
+
+.copyright {
+  position: absolute;
+  top: 55%;
+  right: 1%;
+  font-family: "Calligraffitti", cursive;
+  line-height: 2.6rem;
+  color: #ccd6f6;
+  transform: rotate(90deg) scale(1.6);
+}
+.copyright a {
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .pic-section img {
+    width: 40rem;
   }
-  to {
-    transform: rotate(360deg);
+  .social-links {
+    margin-right: 0;
+  }
+  .copyright a {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .pic-section img {
+    width: 40rem;
+  }
+  .s-links a {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+
+    margin-right: 0.5rem;
+    margin-left: 2rem;
+  }
+  .copyright a {
+    font-size: 0.4rem;
+  }
+  .pic-section img {
+    width: 34rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body {
+    overflow: hidden;
+  }
+  .brand {
+    top: 1.7rem;
+    left: 0.4rem;
+  }
+  /* .links {
+    display: none;
+  } */
+  .links li:nth-child(1),
+  .links li:nth-child(2) {
+    display: none;
+  }
+  .s-links a {
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+
+    margin-right: 0.1rem;
+    margin-left: 0.4rem;
+  }
+  .details {
+    top: 20%;
+    left: 20%;
+  }
+  .copyright {
+    position: absolute;
+    top: 95%;
+    left: 55%;
+    font-family: "Calligraffitti", cursive;
+    line-height: 2.6rem;
+    color: #ccd6f6;
+    transform: rotate(0) scale(1.6);
+  }
+
+  .copyright a {
+    font-size: 0.4rem;
   }
 }
